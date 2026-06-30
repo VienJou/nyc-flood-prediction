@@ -1,48 +1,48 @@
 {
-  "timestamp_utc": "2026-06-30T21:46:28.606560+00:00",
-  "gfs_hash": "6fed1b302532d221",
+  "timestamp_utc": "2026-06-30T22:08:15.434816+00:00",
+  "gfs_hash": "372d0d4f8a9b666a",
   "model": "MMBTWithTabPFNLegacy",
   "pixel_size_m": 300,
   "depth_range_m": [
     0.0,
-    0.42269599437713623
+    0.3913020193576813
   ],
   "cat_distribution": {
-    "0": 71960,
-    "1": 580,
+    "0": 72351,
+    "1": 189,
     "2": 0,
     "3": 0
   },
   "ae_valid": false,
   "borough_stats": {
     "Manhattan": {
-      "mean_depth_m": 0.071,
-      "max_depth_m": 0.205,
-      "pct_flooded": 68.5,
+      "mean_depth_m": 0.07,
+      "max_depth_m": 0.188,
+      "pct_flooded": 70.3,
       "dominant_cat": 0
     },
     "Brooklyn": {
-      "mean_depth_m": 0.102,
-      "max_depth_m": 0.301,
-      "pct_flooded": 82.5,
+      "mean_depth_m": 0.104,
+      "max_depth_m": 0.297,
+      "pct_flooded": 84.4,
       "dominant_cat": 0
     },
     "Queens": {
-      "mean_depth_m": 0.114,
-      "max_depth_m": 0.257,
-      "pct_flooded": 87.5,
+      "mean_depth_m": 0.113,
+      "max_depth_m": 0.245,
+      "pct_flooded": 91.4,
       "dominant_cat": 0
     },
     "Bronx": {
-      "mean_depth_m": 0.088,
-      "max_depth_m": 0.201,
-      "pct_flooded": 80.0,
+      "mean_depth_m": 0.085,
+      "max_depth_m": 0.173,
+      "pct_flooded": 82.0,
       "dominant_cat": 0
     },
     "Staten Island": {
-      "mean_depth_m": 0.087,
-      "max_depth_m": 0.238,
-      "pct_flooded": 83.7,
+      "mean_depth_m": 0.091,
+      "max_depth_m": 0.231,
+      "pct_flooded": 88.6,
       "dominant_cat": 0
     }
   },
@@ -59,15 +59,15 @@
       "lat": 40.6413,
       "lon": -73.7789,
       "precip_24h_mm": 0.0,
-      "temp_c_mean": 24.5,
-      "wind_ms_max": 21.2,
+      "temp_c_mean": 24.4,
+      "wind_ms_max": 24.2,
       "last_hour_precip_mm": 0.0
     },
     "Central Park": {
       "lat": 40.7812,
       "lon": -73.9665,
       "precip_24h_mm": 0.0,
-      "temp_c_mean": 26.7,
+      "temp_c_mean": 26.8,
       "wind_ms_max": 21.1,
       "last_hour_precip_mm": 0.0
     },
@@ -75,7 +75,7 @@
       "lat": 40.5795,
       "lon": -74.1502,
       "precip_24h_mm": 0.0,
-      "temp_c_mean": 26.3,
+      "temp_c_mean": 26.5,
       "wind_ms_max": 18.0,
       "last_hour_precip_mm": 0.0
     }
@@ -90,5 +90,5 @@
       -73.599362
     ]
   ],
-  "overlay_max_depth_m": 0.2012
+  "overlay_max_depth_m": 0.1988
 }

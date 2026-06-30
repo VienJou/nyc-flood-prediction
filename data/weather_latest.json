@@ -11,15 +11,15 @@
     "lat": 40.6413,
     "lon": -73.7789,
     "precip_24h_mm": 0.0,
-    "temp_c_mean": 24.5,
-    "wind_ms_max": 21.2,
+    "temp_c_mean": 24.4,
+    "wind_ms_max": 24.2,
     "last_hour_precip_mm": 0.0
   },
   "Central Park": {
     "lat": 40.7812,
     "lon": -73.9665,
     "precip_24h_mm": 0.0,
-    "temp_c_mean": 26.7,
+    "temp_c_mean": 26.8,
     "wind_ms_max": 21.1,
     "last_hour_precip_mm": 0.0
   },
@@ -27,7 +27,7 @@
     "lat": 40.5795,
     "lon": -74.1502,
     "precip_24h_mm": 0.0,
-    "temp_c_mean": 26.3,
+    "temp_c_mean": 26.5,
     "wind_ms_max": 18.0,
     "last_hour_precip_mm": 0.0
   }
