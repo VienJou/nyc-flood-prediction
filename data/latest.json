@@ -1,7 +1,83 @@
 {
-  "status": "initializing",
-  "message": "First inference run not yet complete. Check back after the next GFS update window (every 6 hours).",
-  "timestamp_utc": null,
-  "borough_stats": {},
-  "weather_summary": {}
+  "timestamp_utc": "2026-06-30T19:00:20.447523+00:00",
+  "gfs_hash": "unknown",
+  "model": "MMBTWithTabPFNLegacy",
+  "pixel_size_m": 300,
+  "depth_range_m": [
+    0.0,
+    0.23292730748653412
+  ],
+  "cat_distribution": {
+    "0": 72539,
+    "1": 1,
+    "2": 0,
+    "3": 0
+  },
+  "ae_valid": false,
+  "borough_stats": {
+    "Manhattan": {
+      "mean_depth_m": 0.067,
+      "max_depth_m": 0.155,
+      "pct_flooded": 70.3,
+      "dominant_cat": 0
+    },
+    "Brooklyn": {
+      "mean_depth_m": 0.079,
+      "max_depth_m": 0.208,
+      "pct_flooded": 69.1,
+      "dominant_cat": 0
+    },
+    "Queens": {
+      "mean_depth_m": 0.129,
+      "max_depth_m": 0.196,
+      "pct_flooded": 99.7,
+      "dominant_cat": 0
+    },
+    "Bronx": {
+      "mean_depth_m": 0.092,
+      "max_depth_m": 0.166,
+      "pct_flooded": 96.4,
+      "dominant_cat": 0
+    },
+    "Staten Island": {
+      "mean_depth_m": 0.109,
+      "max_depth_m": 0.188,
+      "pct_flooded": 99.8,
+      "dominant_cat": 0
+    }
+  },
+  "weather_summary": {
+    "Lower Manhattan": {
+      "lat": 40.7488,
+      "lon": -73.9857,
+      "precip_24h_mm": 0.0,
+      "temp_c_mean": 26.7,
+      "wind_ms_max": 20.1,
+      "last_hour_precip_mm": 0.0
+    },
+    "JFK Airport": {
+      "lat": 40.6413,
+      "lon": -73.7789,
+      "precip_24h_mm": 0.0,
+      "temp_c_mean": 24.6,
+      "wind_ms_max": 17.5,
+      "last_hour_precip_mm": 0.0
+    },
+    "Central Park": {
+      "lat": 40.7812,
+      "lon": -73.9665,
+      "precip_24h_mm": 0.0,
+      "temp_c_mean": 26.6,
+      "wind_ms_max": 19.9,
+      "last_hour_precip_mm": 0.0
+    },
+    "Staten Island": {
+      "lat": 40.5795,
+      "lon": -74.1502,
+      "precip_24h_mm": 0.0,
+      "temp_c_mean": 26.1,
+      "wind_ms_max": 18.0,
+      "last_hour_precip_mm": 0.0
+    }
+  }
 }
