@@ -79,5 +79,16 @@
       "wind_ms_max": 18.0,
       "last_hour_precip_mm": 0.0
     }
-  }
+  },
+  "overlay_bounds": [
+    [
+      40.449018,
+      -74.350053
+    ],
+    [
+      40.980053,
+      -73.599362
+    ]
+  ],
+  "overlay_max_depth_m": 0.1688
 }
