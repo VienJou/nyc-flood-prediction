@@ -1,0 +1,7 @@
+{
+  "status": "initializing",
+  "message": "First inference run not yet complete. Check back after the next GFS update window (every 6 hours).",
+  "timestamp_utc": null,
+  "borough_stats": {},
+  "weather_summary": {}
+}
