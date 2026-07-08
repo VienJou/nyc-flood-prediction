@@ -2,33 +2,33 @@
   "Lower Manhattan": {
     "lat": 40.7488,
     "lon": -73.9857,
-    "precip_72h_mm": 1.0,
-    "temp_c_mean": 24.5,
-    "wind_ms_max": 27.0,
-    "last_hour_precip_mm": 0.1
+    "precip_72h_mm": 0.2,
+    "temp_c_mean": 25.4,
+    "wind_ms_max": 24.5,
+    "last_hour_precip_mm": 0.2
   },
   "JFK Airport": {
     "lat": 40.6413,
     "lon": -73.7789,
-    "precip_72h_mm": 16.1,
-    "temp_c_mean": 23.9,
+    "precip_72h_mm": 0.4,
+    "temp_c_mean": 24.5,
     "wind_ms_max": 24.3,
-    "last_hour_precip_mm": 0.0
+    "last_hour_precip_mm": 0.1
   },
   "Central Park": {
     "lat": 40.7812,
     "lon": -73.9665,
-    "precip_72h_mm": 1.0,
-    "temp_c_mean": 24.6,
-    "wind_ms_max": 27.3,
-    "last_hour_precip_mm": 0.0
+    "precip_72h_mm": 0.2,
+    "temp_c_mean": 25.5,
+    "wind_ms_max": 25.4,
+    "last_hour_precip_mm": 0.1
   },
   "Staten Island": {
     "lat": 40.5795,
     "lon": -74.1502,
-    "precip_72h_mm": 3.0,
-    "temp_c_mean": 24.2,
-    "wind_ms_max": 31.4,
+    "precip_72h_mm": 0.4,
+    "temp_c_mean": 25.2,
+    "wind_ms_max": 21.3,
     "last_hour_precip_mm": 0.0
   }
 }
