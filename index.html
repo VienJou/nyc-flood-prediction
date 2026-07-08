@@ -66,7 +66,7 @@ th     { color:#7AADC6; font-weight:600; } td { color:#E8EFF7; }
 <body>
 <div id="app">
   <h1>NYC FloodNet — Live Flood Predictions</h1>
-  <div id="sub">24-hour flood depth forecast · GFS weather input · MMBTWithTabPFNLegacy · 300 m resolution · Updates every 6 h</div>
+  <div id="sub">24-hour flood depth forecast · GFS 3-day forecast input (72 h) · MMBTWithTabPFNLegacy · 300 m resolution · Updates every 6 h</div>
   <div id="map-wrap">
     <div id="map"></div>
     <div id="banner">Loading…</div>
@@ -83,22 +83,23 @@ th     { color:#7AADC6; font-weight:600; } td { color:#E8EFF7; }
   </div>
   <div id="stats"></div>
   <div id="weather" style="display:none">
-    <h2>Model Input — GFS Weather (past 24 h observed conditions used for inference)</h2>
+    <h2>Model Input — GFS Weather (past 72 h observed + next 72 h forecast used for inference)</h2>
     <p style="font-size:11px;color:#7AADC6;margin-bottom:8px">
-      The model ingests the past 144 h of GFS weather. These statistics summarise
-      the most recent 24 h window. The flood map above shows the predicted state
-      <strong>24 hours from the inference time</strong> (model lead time = 24 h).
+      The model ingests 72 h of observed GFS weather (windows [144, 120, 96]) and the
+      GFS 3-day forecast (windows [72, 48, 24]). The flood peak target is at
+      <strong>T_now + 24 h</strong> (window [72]); days 2–3 of GFS forecast provide
+      post-peak weather context. Precip totals cover the full 72 h forecast window.
     </p>
     <table id="wtbl">
       <thead><tr>
-        <th>Location</th><th>Precip past 24 h (mm)</th>
+        <th>Location</th><th>Forecast Precip 72 h (mm)</th>
         <th>Mean Temp (°C)</th><th>Max Wind (m/s)</th>
       </tr></thead>
       <tbody id="wtbody"></tbody>
     </table>
   </div>
   <div id="wx-chart-wrap">
-    <h2>Past 144 h Weather History — GFS Model Input</h2>
+    <h2>GFS Weather Input — Past 72 h Observed + Next 72 h Forecast</h2>
     <div class="chart-controls">
       <div>
         <label for="wx-loc">Location: </label>
@@ -121,8 +122,9 @@ th     { color:#7AADC6; font-weight:600; } td { color:#E8EFF7; }
     </div>
     <div id="wx-canvas-wrap"><canvas id="wx-canvas"></canvas></div>
     <p class="chart-note">
-      144 h window used as model input. The vertical dashed line marks inference time;
-      the flood map shows predicted conditions <strong>+24 h</strong> after that point.
+      Left of dashed line: past 72 h observed GFS (history). Right: next 72 h GFS 3-day forecast.
+      The flood map shows predicted conditions <strong>+24 h</strong> after inference time (flood peak target).
+      GFS days 2–3 (+24 to +72 h) provide post-peak weather context to the model.
     </p>
   </div>
 
@@ -211,15 +213,18 @@ async function load() {
   if (Object.keys(wx).length) {
     document.getElementById('weather').style.display = 'block';
     document.getElementById('wtbody').innerHTML = Object.entries(wx).map(([loc,w]) =>
-      '<tr><td>'+loc+'</td><td>'+w.precip_24h_mm+'</td><td>'
+      '<tr><td>'+loc+'</td><td>'+(w.precip_72h_mm ?? w.precip_24h_mm ?? '—')+'</td><td>'
       +w.temp_c_mean+'</td><td>'+w.wind_ms_max+'</td></tr>').join('');
   }
   const maxD = d.overlay_max_depth_m ?? (d.depth_range_m||[0,0])[1];
   let predTime = '';
-  if (d.timestamp_utc) {
-    const pred = new Date(new Date(d.timestamp_utc).getTime() + 24*3600*1000);
+  const predSrc = d.predicted_for || (d.timestamp_utc
+    ? new Date(new Date(d.timestamp_utc).getTime() + (d.lead_time_hours||24)*3600*1000).toISOString()
+    : null);
+  if (predSrc) {
+    const pred = new Date(predSrc);
     predTime = ' · Predicted for: ' + pred.toLocaleString('en-US',
-      {timeZone:'UTC',month:'short',day:'numeric',hour:'2-digit',minute:'2-digit'}) + ' UTC';
+      {timeZone:'UTC',month:'short',day:'numeric',hour:'2-digit',minute:'2-digit'}) + ' UTC (+24 h)';
   }
   document.getElementById('banner').textContent =
     'Max depth: ' + Number(maxD).toFixed(3) + ' m' + predTime;
