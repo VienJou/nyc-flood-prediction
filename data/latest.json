@@ -1,50 +1,50 @@
 {
-  "timestamp_utc": "2026-07-08T10:00:16.888149+00:00",
-  "predicted_for": "2026-07-09T10:00:16.888149+00:00",
+  "timestamp_utc": "2026-07-08T10:11:38.397139+00:00",
+  "predicted_for": "2026-07-09T10:11:38.397139+00:00",
   "lead_time_hours": 24,
   "gfs_hash": "215a68c71308203c",
   "model": "MMBTWithTabPFNLegacy",
   "pixel_size_m": 300,
   "depth_range_m": [
     0.0,
-    2.115424871444702
+    2.4725258350372314
   ],
   "cat_distribution": {
-    "0": 26405,
-    "1": 25116,
-    "2": 7334,
-    "3": 2355
+    "0": 28373,
+    "1": 22221,
+    "2": 7431,
+    "3": 3055
   },
   "ae_valid": true,
   "borough_stats": {
     "Manhattan": {
-      "mean_depth_m": 0.227,
-      "max_depth_m": 1.175,
-      "pct_flooded": 45.3,
+      "mean_depth_m": 0.226,
+      "max_depth_m": 1.285,
+      "pct_flooded": 45.1,
       "dominant_cat": 1
     },
     "Brooklyn": {
-      "mean_depth_m": 0.476,
-      "max_depth_m": 1.541,
-      "pct_flooded": 99.8,
+      "mean_depth_m": 0.475,
+      "max_depth_m": 1.75,
+      "pct_flooded": 98.9,
       "dominant_cat": 1
     },
     "Queens": {
-      "mean_depth_m": 0.031,
-      "max_depth_m": 0.508,
+      "mean_depth_m": 0.027,
+      "max_depth_m": 0.5,
       "pct_flooded": 9.5,
       "dominant_cat": 0
     },
     "Bronx": {
-      "mean_depth_m": 0.271,
-      "max_depth_m": 1.09,
-      "pct_flooded": 51.4,
+      "mean_depth_m": 0.251,
+      "max_depth_m": 1.228,
+      "pct_flooded": 46.6,
       "dominant_cat": 1
     },
     "Staten Island": {
-      "mean_depth_m": 0.288,
-      "max_depth_m": 1.245,
-      "pct_flooded": 53.7,
+      "mean_depth_m": 0.291,
+      "max_depth_m": 1.386,
+      "pct_flooded": 53.5,
       "dominant_cat": 1
     }
   },
@@ -92,5 +92,5 @@
       -73.599362
     ]
   ],
-  "overlay_max_depth_m": 1.0141
+  "overlay_max_depth_m": 1.0931
 }
