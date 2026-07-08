@@ -3,7 +3,7 @@
     "lat": 40.7488,
     "lon": -73.9857,
     "precip_72h_mm": 1.0,
-    "temp_c_mean": 24.4,
+    "temp_c_mean": 24.5,
     "wind_ms_max": 27.0,
     "last_hour_precip_mm": 0.1
   },
@@ -11,7 +11,7 @@
     "lat": 40.6413,
     "lon": -73.7789,
     "precip_72h_mm": 16.1,
-    "temp_c_mean": 23.8,
+    "temp_c_mean": 23.9,
     "wind_ms_max": 24.3,
     "last_hour_precip_mm": 0.0
   },
@@ -19,7 +19,7 @@
     "lat": 40.7812,
     "lon": -73.9665,
     "precip_72h_mm": 1.0,
-    "temp_c_mean": 24.5,
+    "temp_c_mean": 24.6,
     "wind_ms_max": 27.3,
     "last_hour_precip_mm": 0.0
   },
@@ -27,7 +27,7 @@
     "lat": 40.5795,
     "lon": -74.1502,
     "precip_72h_mm": 3.0,
-    "temp_c_mean": 24.1,
+    "temp_c_mean": 24.2,
     "wind_ms_max": 31.4,
     "last_hour_precip_mm": 0.0
   }
