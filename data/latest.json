@@ -1,50 +1,50 @@
 {
-  "timestamp_utc": "2026-07-08T21:52:46.381194+00:00",
-  "predicted_for": "2026-07-09T21:52:46.381194+00:00",
+  "timestamp_utc": "2026-07-08T22:11:22.290919+00:00",
+  "predicted_for": "2026-07-09T22:11:22.290919+00:00",
   "lead_time_hours": 24,
-  "gfs_hash": "fa6df33470036619",
+  "gfs_hash": "c1ea7d4fa7a38f15",
   "model": "MMBTWithTabPFNLegacy",
   "pixel_size_m": 300,
   "depth_range_m": [
     0.0,
-    2.411132574081421
+    2.090266227722168
   ],
   "cat_distribution": {
-    "0": 27437,
-    "1": 22754,
-    "2": 8113,
-    "3": 3326
+    "0": 26568,
+    "1": 25849,
+    "2": 7508,
+    "3": 2615
   },
   "ae_valid": true,
   "borough_stats": {
     "Manhattan": {
-      "mean_depth_m": 0.231,
-      "max_depth_m": 1.349,
-      "pct_flooded": 44.7,
+      "mean_depth_m": 0.227,
+      "max_depth_m": 1.177,
+      "pct_flooded": 45.3,
       "dominant_cat": 1
     },
     "Brooklyn": {
-      "mean_depth_m": 0.48,
-      "max_depth_m": 1.685,
-      "pct_flooded": 98.9,
+      "mean_depth_m": 0.477,
+      "max_depth_m": 1.542,
+      "pct_flooded": 99.8,
       "dominant_cat": 1
     },
     "Queens": {
-      "mean_depth_m": 0.072,
-      "max_depth_m": 1.359,
-      "pct_flooded": 22.7,
+      "mean_depth_m": 0.145,
+      "max_depth_m": 1.202,
+      "pct_flooded": 36.1,
       "dominant_cat": 0
     },
     "Bronx": {
-      "mean_depth_m": 0.341,
-      "max_depth_m": 1.268,
-      "pct_flooded": 67.4,
+      "mean_depth_m": 0.338,
+      "max_depth_m": 1.086,
+      "pct_flooded": 68.1,
       "dominant_cat": 1
     },
     "Staten Island": {
-      "mean_depth_m": 0.298,
-      "max_depth_m": 1.424,
-      "pct_flooded": 53.5,
+      "mean_depth_m": 0.289,
+      "max_depth_m": 1.24,
+      "pct_flooded": 53.7,
       "dominant_cat": 1
     }
   },
@@ -53,7 +53,7 @@
       "lat": 40.7488,
       "lon": -73.9857,
       "precip_72h_mm": 0.7,
-      "temp_c_mean": 24.5,
+      "temp_c_mean": 24.6,
       "wind_ms_max": 17.9,
       "last_hour_precip_mm": 0.6
     },
@@ -69,7 +69,7 @@
       "lat": 40.7812,
       "lon": -73.9665,
       "precip_72h_mm": 0.5,
-      "temp_c_mean": 24.6,
+      "temp_c_mean": 24.7,
       "wind_ms_max": 19.9,
       "last_hour_precip_mm": 0.2
     },
@@ -77,7 +77,7 @@
       "lat": 40.5795,
       "lon": -74.1502,
       "precip_72h_mm": 6.2,
-      "temp_c_mean": 24.1,
+      "temp_c_mean": 24.2,
       "wind_ms_max": 18.2,
       "last_hour_precip_mm": 0.2
     }
@@ -92,5 +92,5 @@
       -73.599362
     ]
   ],
-  "overlay_max_depth_m": 1.0999
+  "overlay_max_depth_m": 1.0332
 }
