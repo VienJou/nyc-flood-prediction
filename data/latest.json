@@ -1,50 +1,50 @@
 {
-  "timestamp_utc": "2026-07-08T16:11:00.521162+00:00",
-  "predicted_for": "2026-07-09T16:11:00.521162+00:00",
+  "timestamp_utc": "2026-07-08T21:52:46.381194+00:00",
+  "predicted_for": "2026-07-09T21:52:46.381194+00:00",
   "lead_time_hours": 24,
-  "gfs_hash": "79692769f8edb9c8",
+  "gfs_hash": "fa6df33470036619",
   "model": "MMBTWithTabPFNLegacy",
   "pixel_size_m": 300,
   "depth_range_m": [
     0.0,
-    2.186330556869507
+    2.411132574081421
   ],
   "cat_distribution": {
-    "0": 25317,
-    "1": 22300,
-    "2": 7539,
-    "3": 2624
+    "0": 27437,
+    "1": 22754,
+    "2": 8113,
+    "3": 3326
   },
   "ae_valid": true,
   "borough_stats": {
     "Manhattan": {
-      "mean_depth_m": 0.174,
-      "max_depth_m": 1.254,
-      "pct_flooded": 33.8,
+      "mean_depth_m": 0.231,
+      "max_depth_m": 1.349,
+      "pct_flooded": 44.7,
       "dominant_cat": 1
     },
     "Brooklyn": {
-      "mean_depth_m": 0.477,
-      "max_depth_m": 1.588,
-      "pct_flooded": 99.1,
+      "mean_depth_m": 0.48,
+      "max_depth_m": 1.685,
+      "pct_flooded": 98.9,
       "dominant_cat": 1
     },
     "Queens": {
-      "mean_depth_m": 0.022,
-      "max_depth_m": 0.516,
-      "pct_flooded": 7.3,
+      "mean_depth_m": 0.072,
+      "max_depth_m": 1.359,
+      "pct_flooded": 22.7,
       "dominant_cat": 0
     },
     "Bronx": {
-      "mean_depth_m": 0.055,
-      "max_depth_m": 0.96,
-      "pct_flooded": 9.4,
+      "mean_depth_m": 0.341,
+      "max_depth_m": 1.268,
+      "pct_flooded": 67.4,
       "dominant_cat": 1
     },
     "Staten Island": {
-      "mean_depth_m": 0.216,
-      "max_depth_m": 1.323,
-      "pct_flooded": 40.1,
+      "mean_depth_m": 0.298,
+      "max_depth_m": 1.424,
+      "pct_flooded": 53.5,
       "dominant_cat": 1
     }
   },
@@ -52,34 +52,34 @@
     "Lower Manhattan": {
       "lat": 40.7488,
       "lon": -73.9857,
-      "precip_72h_mm": 0.2,
-      "temp_c_mean": 25.4,
-      "wind_ms_max": 24.5,
-      "last_hour_precip_mm": 0.2
+      "precip_72h_mm": 0.7,
+      "temp_c_mean": 24.5,
+      "wind_ms_max": 17.9,
+      "last_hour_precip_mm": 0.6
     },
     "JFK Airport": {
       "lat": 40.6413,
       "lon": -73.7789,
-      "precip_72h_mm": 0.4,
-      "temp_c_mean": 24.5,
-      "wind_ms_max": 24.3,
-      "last_hour_precip_mm": 0.1
+      "precip_72h_mm": 4.7,
+      "temp_c_mean": 23.8,
+      "wind_ms_max": 22.4,
+      "last_hour_precip_mm": 0.4
     },
     "Central Park": {
       "lat": 40.7812,
       "lon": -73.9665,
-      "precip_72h_mm": 0.2,
-      "temp_c_mean": 25.6,
-      "wind_ms_max": 25.4,
-      "last_hour_precip_mm": 0.1
+      "precip_72h_mm": 0.5,
+      "temp_c_mean": 24.6,
+      "wind_ms_max": 19.9,
+      "last_hour_precip_mm": 0.2
     },
     "Staten Island": {
       "lat": 40.5795,
       "lon": -74.1502,
-      "precip_72h_mm": 0.4,
-      "temp_c_mean": 25.2,
-      "wind_ms_max": 21.3,
-      "last_hour_precip_mm": 0.0
+      "precip_72h_mm": 6.2,
+      "temp_c_mean": 24.1,
+      "wind_ms_max": 18.2,
+      "last_hour_precip_mm": 0.2
     }
   },
   "overlay_bounds": [
@@ -92,5 +92,5 @@
       -73.599362
     ]
   ],
-  "overlay_max_depth_m": 1.0549
+  "overlay_max_depth_m": 1.0999
 }
