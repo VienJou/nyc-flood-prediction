@@ -3,7 +3,7 @@
     "lat": 40.7488,
     "lon": -73.9857,
     "precip_72h_mm": 36.6,
-    "temp_c_mean": 25.5,
+    "temp_c_mean": 25.6,
     "wind_ms_max": 22.8,
     "last_hour_precip_mm": 0.0
   },
@@ -27,7 +27,7 @@
     "lat": 40.5795,
     "lon": -74.1502,
     "precip_72h_mm": 17.2,
-    "temp_c_mean": 24.7,
+    "temp_c_mean": 24.8,
     "wind_ms_max": 22.4,
     "last_hour_precip_mm": 0.0
   }
